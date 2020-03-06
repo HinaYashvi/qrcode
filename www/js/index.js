@@ -36,7 +36,7 @@ var app = {
           alert('imei :'+ imei);
           //alert('error :'+err); 
         });*/
-        window.plugins.sim.getSimInfo(successCallback, errorCallback);
+        //window.plugins.sim.getSimInfo(successCallback, errorCallback);
     },
 
      
