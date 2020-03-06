@@ -23,7 +23,7 @@ var app = {
     },
     
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        //document.addEventListener('deviceready', this.onDeviceReady, false);
 
     },
     
@@ -54,7 +54,7 @@ var app = {
     }*/
 };
 function scan(){
-    //alert("in scan");
+    alert("in scan");
     cordova.plugins.barcodeScanner.scan(
             function (result) {
                 alert("Barcode/QR code data\n" + "Result: " + result.text + "\n" + "Format: " + result.format + "\n" + "Cancelled: " + result.cancelled);
@@ -79,7 +79,7 @@ function scan(){
             }
         ); 
 }
-function successCallback(result) {
+//function successCallback(result) {
   /*alert("success");
   alert(result);
   alert(result.carrierName);
@@ -89,12 +89,12 @@ function successCallback(result) {
   alert(result.phoneNumber);
   alert(result.cards[0].phoneNumber);
   alert(result.cards[1].phoneNumber);*/
-  alert("IMEI 1 : "+result.cards[0].deviceId);
-  alert("IMEI 2 : "+result.cards[1].deviceId);
-}
+//  alert("IMEI 1 : "+result.cards[0].deviceId);
+//  alert("IMEI 2 : "+result.cards[1].deviceId);
+//}
 
-    function errorCallback(error) {
+   /* function errorCallback(error) {
         alert("error");
         console.log(error);
         alert(error);
-    }
+    }*/
