@@ -28,6 +28,7 @@ var app = {
     },
     
     onDeviceReady: function() {
+      //alert("called");
        // app.receivedEvent('deviceready');
         //Log.initialize(app.displayLogLine);
         /*alert("onDeviceReady");
@@ -79,18 +80,18 @@ function scan(){
         ); 
 }
 function successCallback(result) {
-        /*alert("success");
-        alert(result);
-        alert(result.carrierName);
-        alert(result.countryCode);
-        alert(result.mcc);
-        alert(result.mnc);
-        alert(result.phoneNumber);
-        alert(result.cards[0].phoneNumber);
-        alert(result.cards[1].phoneNumber);*/
-        alert("IMEI 1 : "+result.cards[0].deviceId);
-        alert("IMEI 2 : "+result.cards[1].deviceId);
-    }
+  /*alert("success");
+  alert(result);
+  alert(result.carrierName);
+  alert(result.countryCode);
+  alert(result.mcc);
+  alert(result.mnc);
+  alert(result.phoneNumber);
+  alert(result.cards[0].phoneNumber);
+  alert(result.cards[1].phoneNumber);*/
+  alert("IMEI 1 : "+result.cards[0].deviceId);
+  alert("IMEI 2 : "+result.cards[1].deviceId);
+}
 
     function errorCallback(error) {
         alert("error");
